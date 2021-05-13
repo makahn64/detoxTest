@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import {Button, Input, Icon} from 'react-native-elements';
+import {Button, Icon, Input} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/native';
 
 export const SecretCodeScreen = () => {
@@ -23,7 +23,7 @@ export const SecretCodeScreen = () => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#45008f'}}>
       <View style={styles.container}>
-        <Text style={styles.header} testID="landing-header">
+        <Text style={styles.header} testID="secret-screen-header">
           Please Enter Secret Code
         </Text>
         <View style={styles.inputContainer}>
@@ -33,13 +33,14 @@ export const SecretCodeScreen = () => {
             value={code}
             onChangeText={setCode}
             leftIcon={<Icon name="lock" size={24} color="#909090" />}
+            testID="input-secret-code"
           />
         </View>
         <Button
           title="ENTER"
           onPress={handleCodePress}
           style={styles.button}
-          testID="submit-secret-code-button"
+          testID="button-submit-secret-code"
           disabled={!code}
         />
       </View>

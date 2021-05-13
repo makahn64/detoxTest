@@ -13,10 +13,10 @@ export const SuccessScreen = props => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#45008f'}}>
       <View style={styles.container}>
-        <Text style={styles.header} testID="landing-header">
+        <Text style={styles.header} testID="success-header">
           Success!
         </Text>
-        <Text style={styles.text}>
+        <Text style={styles.text} testID="success-cta">
           Nice job entering the secret code. Push the button below to start
           over.
         </Text>
@@ -24,7 +24,7 @@ export const SuccessScreen = props => {
           title="START OVER"
           onPress={handleStartOver}
           style={styles.button}
-          testID="start-over-button"
+          testID="button-start-over"
         />
       </View>
     </SafeAreaView>
