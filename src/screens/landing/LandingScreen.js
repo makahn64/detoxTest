@@ -7,7 +7,9 @@ import {useNavigation} from '@react-navigation/native';
 export const LandingScreen = props => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#45008f'}}>
+    <SafeAreaView
+      style={{flex: 1, backgroundColor: '#45008f'}}
+      testID="landing-screen">
       <View style={styles.container}>
         <Text style={styles.header} testID="landing-header">
           Detox Test

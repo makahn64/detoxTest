@@ -21,7 +21,9 @@ export const SecretCodeScreen = () => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#45008f'}}>
+    <SafeAreaView
+      style={{flex: 1, backgroundColor: '#45008f'}}
+      testID="secret-code-screen">
       <View style={styles.container}>
         <Text style={styles.header} testID="secret-screen-header">
           Please Enter Secret Code

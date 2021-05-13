@@ -7,7 +7,11 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "detox:build:ios": "detox build -c ios",
+    "detox:test:ios": "detox test -c ios",
+    "detox:build:android": "detox build -c android",
+    "detox:test:android": "detox test -c android"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
@@ -24,11 +28,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "@babel/runtime": "^7.12.5",
+    "@babel/eslint-parser": "^7.14.2",
+    "@babel/runtime": "^7.14.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
+    "detox": "^18.13.0",
     "eslint": "7.14.0",
+    "eslint-plugin-detox": "^1.0.0",
     "jest": "^26.6.3",
+    "jest-circus": "^26.6.3",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "17.0.1"
   },
